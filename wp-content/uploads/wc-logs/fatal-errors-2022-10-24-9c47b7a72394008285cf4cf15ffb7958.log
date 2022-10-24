@@ -1,0 +1,14 @@
+2022-10-24T07:13:28+00:00 CRITICAL Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php:2284
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php(2284): json_decode(Array, true)
+#1 C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-elementor-import.php(138): Advanced_Import_Admin->isJson(Array)
+#2 C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-elementor-import.php(224): Advanced_Import_Elementor->elementor_data(Array)
+#3 C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php(2303): Advanced_Import_Elementor->process_elementor_posts()
+#4 C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php(1243): Advanced_Import_Admin->import_menu_and_options()
+#5 C:\xampp\htdocs\wordpress_api\wp-includes\class-wp-hook.php(307): Advanced_Import_Admin->import_content('')
+#6 C:\xampp\htdocs\wordpress_api\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress_api\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress_api\wp-admin\admin-ajax.php(187): do_action('wp_ajax_import_...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress_api\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php on line 2284
+
